@@ -1,4 +1,4 @@
-# ImageCroppingUI_AutoLayoutTesting
+# ImageCroppingUI_DeviceOrientationChange
 
 
 <p align="center">
