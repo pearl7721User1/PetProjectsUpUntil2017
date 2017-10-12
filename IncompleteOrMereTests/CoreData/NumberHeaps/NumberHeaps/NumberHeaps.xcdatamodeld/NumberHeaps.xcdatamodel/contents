@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Hey" representedClassName=".Hey" syncable="YES">
+        <attribute name="number" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="okays" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Okay" inverseName="hey" inverseEntity="Okay" syncable="YES"/>
+    </entity>
+    <entity name="Okay" representedClassName=".Okay" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="hey" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Hey" inverseName="okays" inverseEntity="Hey" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Hey" positionX="-6066" positionY="-1161" width="128" height="90"/>
+        <element name="Okay" positionX="-5798" positionY="-1087" width="128" height="75"/>
+    </elements>
+</model>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Afghanistan</string>
+		<key>capital</key>
+		<string>Kabul</string>
+		<key>area</key>
+		<string>647500</string>
+		<key>population</key>
+		<string>29121286</string>
+		<key>continent</key>
+		<string>AS</string>
+		<key>tld</key>
+		<string>.af</string>
+		<key>currency</key>
+		<string>Afghani</string>
+		<key>phone</key>
+		<string>93</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>United Arab Emirates</string>
+		<key>capital</key>
+		<string>Abu Dhabi</string>
+		<key>area</key>
+		<string>82880</string>
+		<key>population</key>
+		<string>4975593</string>
+		<key>continent</key>
+		<string>AS</string>
+		<key>tld</key>
+		<string>.ae</string>
+		<key>currency</key>
+		<string>Dirham</string>
+		<key>phone</key>
+		<string>971</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Andorra</string>
+		<key>capital</key>
+		<string>Andorra la Vella</string>
+		<key>area</key>
+		<string>468</string>
+		<key>population</key>
+		<string>84000</string>
+		<key>continent</key>
+		<string>EU</string>
+		<key>tld</key>
+		<string>.ad</string>
+		<key>currency</key>
+		<string>Euro</string>
+		<key>phone</key>
+		<string>376</string>
+	</dict>
+</array>
+</plist>

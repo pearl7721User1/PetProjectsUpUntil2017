@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NumberHeaps" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UG6-X0-eKY">
+                                <rect key="frame" x="59" y="46" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cnt:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKl-3J-Txk">
+                                <rect key="frame" x="21" y="46" width="30" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBa-ew-lyw">
+                                <rect key="frame" x="261" y="41" width="53" height="30"/>
+                                <state key="normal" title="addHey"/>
+                                <connections>
+                                    <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iWH-Br-wrh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dc2-LD-UbU">
+                                <rect key="frame" x="266" y="79" width="43" height="30"/>
+                                <state key="normal" title="delete"/>
+                                <connections>
+                                    <action selector="deleteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g7E-CK-gyX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Okay:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFg-8x-82n">
+                                <rect key="frame" x="16" y="166" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlL-hN-510">
+                                <rect key="frame" x="68" y="166" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3S7-py-lnp">
+                                <rect key="frame" x="271" y="166" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="addOkay"/>
+                                <connections>
+                                    <action selector="btnForOkay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Eh-2O-Vvk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nG-oZ-N5R">
+                                <rect key="frame" x="30" y="86" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="update"/>
+                                <connections>
+                                    <action selector="btnEditTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="izF-B1-UVW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hBa-ew-lyw" firstAttribute="centerY" secondItem="UG6-X0-eKY" secondAttribute="centerY" id="4GW-Po-x3I"/>
+                            <constraint firstItem="GFg-8x-82n" firstAttribute="top" secondItem="iKl-3J-Txk" secondAttribute="bottom" constant="99" id="9Xe-Rt-bbZ"/>
+                            <constraint firstItem="iKl-3J-Txk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="26" id="9g9-jY-OTl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hBa-ew-lyw" secondAttribute="trailing" constant="45" id="GU3-jg-bOf"/>
+                            <constraint firstItem="hlL-hN-510" firstAttribute="top" secondItem="UG6-X0-eKY" secondAttribute="bottom" constant="99" id="GfO-6j-g6U"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="GFg-8x-82n" secondAttribute="leading" id="Hu8-bJ-Esq"/>
+                            <constraint firstItem="Dc2-LD-UbU" firstAttribute="centerX" secondItem="hBa-ew-lyw" secondAttribute="centerX" id="SxZ-44-bld"/>
+                            <constraint firstItem="Dc2-LD-UbU" firstAttribute="top" secondItem="hBa-ew-lyw" secondAttribute="bottom" constant="8" symbolic="YES" id="abU-Rg-gf5"/>
+                            <constraint firstItem="UG6-X0-eKY" firstAttribute="leading" secondItem="iKl-3J-Txk" secondAttribute="trailing" constant="8" symbolic="YES" id="b3h-X1-mrE"/>
+                            <constraint firstItem="hlL-hN-510" firstAttribute="leading" secondItem="GFg-8x-82n" secondAttribute="trailing" constant="8" id="bVV-Rq-cfl"/>
+                            <constraint firstItem="iKl-3J-Txk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="cYQ-Ua-rpE"/>
+                            <constraint firstItem="UG6-X0-eKY" firstAttribute="baseline" secondItem="iKl-3J-Txk" secondAttribute="baseline" id="ls9-vz-HUO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countLabel" destination="UG6-X0-eKY" id="Qmb-pj-NS0"/>
+                        <outlet property="okayLabel" destination="hlL-hN-510" id="onX-GN-bV6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

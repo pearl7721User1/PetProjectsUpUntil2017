@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Y6F-kZ-knQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--야임마-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="dsfewrefds" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iX8-dH-wXT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKK-Au-AY3">
+                                <rect key="frame" x="288" y="154" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Ce6-Fh-Rrs" kind="show" identifier="DetailViewController" id="sdH-Zv-WNY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iX8-dH-wXT" secondAttribute="trailing" id="cy0-20-AOx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iX8-dH-wXT" secondAttribute="bottom" id="eha-pr-43r"/>
+                            <constraint firstItem="iX8-dH-wXT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="i3p-ob-UMa"/>
+                            <constraint firstItem="iX8-dH-wXT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="y05-Ya-I9o"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="야임마" id="TYk-0U-7Uo">
+                        <barButtonItem key="leftBarButtonItem" title="뭐임마" id="bTO-58-Lea"/>
+                        <barButtonItem key="rightBarButtonItem" title="뭐임마" id="JBt-qB-Gcr"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="TK9-J1-r7N">
+            <objects>
+                <viewController id="Ce6-Fh-Rrs" customClass="SecondViewController" customModule="dsfewrefds" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="axk-8S-2cB"/>
+                        <viewControllerLayoutGuide type="bottom" id="iJ5-pZ-Jbn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gy6-1Q-7FX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.4681091731" green="1" blue="0.78424721610000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="RPd-3o-kbN" appends="YES" id="QZC-Ip-kek"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="H7c-fl-mYC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DKb-4v-QZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="RPd-3o-kbN">
+                    <connections>
+                        <action selector="handler:" destination="Ce6-Fh-Rrs" id="5pg-f8-W0H"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1836" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sKT-a1-XYJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y6F-kZ-knQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aNn-Ok-ti1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XR5-Sd-rfH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vwf-Yn-0pU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="152.80000000000001" y="-543.77811094452773"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat.jpg" width="720" height="960"/>
+    </resources>
+</document>
