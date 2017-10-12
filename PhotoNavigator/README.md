@@ -2,7 +2,7 @@
 
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/18760280/28749428-45ba9a72-74c7-11e7-94eb-b17401aa76c4.gif">
+<img src="https://user-images.githubusercontent.com/18760280/31515644-29206f04-af96-11e7-8bba-b8fdca411de8.gif">
 </p>
 
 
@@ -11,7 +11,7 @@ It is made of a view that allows you to swipe through the images and an indicato
 Since the view takes the whole screen and you don’t know where you are while navigating, the indicator view is needed to tell you where you are.
 
 <p align="center">
-<img src="http://postfiles2.naver.net/MjAxNzA3MzBfMjEg/MDAxNTAxMzU5Njc4NTg3.5UWHGXuv4UAojFe6G1OUyR6Lzn8t-fo1ZHKgGBFqVEog.jRauC8qb9A-SAxqg46xa4GXCp8wXfjK6Yn5okawOygYg.JPEG.pearl7721/IMG_2552.jpg?type=w1">
+<img src="https://user-images.githubusercontent.com/18760280/31515640-28aa05f8-af96-11e7-8707-f104a009d0c1.jpg">
 </p>
 <p align="center">
   <b>- the Photos app screenshot -</b><br>
@@ -28,7 +28,7 @@ Either you give explicit content size, or you can set constraints to accomplish 
 
 
 <p align="center">
-<img src="http://postfiles10.naver.net/MjAxNzA3MzBfMzAw/MDAxNTAxMzU5NjgyNjgx.wmBZnvlwMyRv7nkjxJ8qoB-FcTj5TvCIZQEsl2cXNDMg.FOfE4c3Re0EYwHK0bLyVTVpbOy5_V5dKnuGkK1eDwbMg.JPEG.pearl7721/ContentRect.jpg?type=w1">
+<img src="https://user-images.githubusercontent.com/18760280/31515642-28dfdfe8-af96-11e7-804f-770104cd7501.jpg">
 </p>
 <p align="center">
   <b>- UIScrollView's embedded contents -</b><br>
@@ -43,7 +43,7 @@ It stays opened up until you reach another image. When that happens, the old ima
 
 
 <p align="center">
-<img src="http://postfiles14.naver.net/MjAxNzA3MzBfMjMz/MDAxNTAxMzU5NjgxNjky.LrfgX1t4OIb1luEbSMwWrlrpeaqclfCpE7Mi4_-ENxwg.8kfLZFNcQj-8hPNzqS9PZkO4tCBCThHbvhia73DJ7hAg.JPEG.pearl7721/Constraints.jpg?type=w1">
+<img src="https://user-images.githubusercontent.com/18760280/31515643-28f98c36-af96-11e7-9069-b72b1862ca6f.jpg">
 </p>
 <p align="center">
   <b>- Building UIScrollView with Autolayout-</b><br>
@@ -62,7 +62,7 @@ The photos app makes it look like it separates each content from one another.
 
 
 <p align="center">
-<img src="http://postfiles8.naver.net/MjAxNzA3MzBfMTI5/MDAxNTAxMzU5Njc5ODE3.SzbFTXe_3lgrOhYIswOtn-pCrJ-PDnNUhbQfHWIik44g.mobKJYZ0URwmDp6eAPSmE4_uB3eDidx6h7PrX8YOssog.JPEG.pearl7721/IMG_2553.jpg?type=w1">
+<img src="https://user-images.githubusercontent.com/18760280/31515638-288eb8e8-af96-11e7-8e48-14660cbb2111.jpg">
 </p>
 <p align="center">
   <b>- How the Photos app separate contents from one another-</b><br>
@@ -75,7 +75,7 @@ They are offscreen, but they are visible whenever the scroll occurs. They make i
 Whenever scroll event occurs, the frame view(either right side or left side according to the scroll direction) move as much the same distance as the content offset is moved. Actually, it must move a little bit more, because it has to end up being positioned offscreen again after the scroll is finished.
 
 <p align="center">
-<img src="http://postfiles5.naver.net/MjAxNzA3MzBfMjcg/MDAxNTAxMzU5NjgwNzQz.WmqC_mgtWNtPT16ggG0blbHsX_3qAM4E_A07UuY-G4Ag.CwOwmOgwp7FPri6sy85oPqxnJTSwRIcN1oGUmQ107rsg.JPEG.pearl7721/Offscreen.jpg?type=w1">
+<img src="https://user-images.githubusercontent.com/18760280/31515641-28c4e602-af96-11e7-9c36-6464ba076c2e.jpg">
 </p>
 
 
