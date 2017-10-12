@@ -2,7 +2,7 @@
 
 
 <p align="center">
-<img src="https://cloud.githubusercontent.com/assets/18760280/23796019/d4bcd7ec-0598-11e7-9d48-946322e24fde.PNG">
+<img src="https://user-images.githubusercontent.com/18760280/31514898-89241156-af93-11e7-8294-1553b1ba0fa1.gif">
 </p>
 
 ### Why did I start this project?
