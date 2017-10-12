@@ -4,7 +4,7 @@ This is a simple project to study a couple of iOS subjects, such as persistence 
 The outcome of the project at the moment looks likes this.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/18760280/31137391-6e997634-a86b-11e7-8dbc-61af109597b8.png">
+<img src="https://user-images.githubusercontent.com/18760280/31516617-74954d80-af99-11e7-9e47-f56e69068fe3.png">
 </p>
 
 
@@ -28,7 +28,7 @@ Also, you can benefit from having a background session when the downloads are ca
 The unfinished downloads are not lost. They are cached in the app’s disk storage. You can pull them out upon the next app launch by just asking the background session.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/18760280/31137934-fc48f18e-a86c-11e7-8421-6e8b72b45b80.png">
+<img src="https://user-images.githubusercontent.com/18760280/31516619-74b80578-af99-11e7-965d-75301e799b85.png">
 </p>
 
 
@@ -54,7 +54,7 @@ The user taps the button in the view layer, and then, the corresponding download
 ### Q. How is the view interacting with the model?
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/18760280/31137935-fc4c26ce-a86c-11e7-9812-97a5d23ac1ac.png">
+<img src="https://user-images.githubusercontent.com/18760280/31516620-74d9e300-af99-11e7-9998-88a3dfd3d6ae.png">
 </p>
 
 Since the download tasks are multiple, this app is using TableView, binding(using selector, delegate) each cell to each download task model.
