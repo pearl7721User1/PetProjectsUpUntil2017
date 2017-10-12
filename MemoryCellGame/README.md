@@ -1,6 +1,6 @@
 # MemoryCellGame
 <p align="center">
-<img src="https://cloud.githubusercontent.com/assets/18760280/25559329/1d0c6d20-2d38-11e7-899a-4a0df4da71fe.gif">
+<img src="https://user-images.githubusercontent.com/18760280/31515337-1fc3c006-af95-11e7-81b8-2e5c0ba6f68d.gif">
 </p>
 
 ## Code snippet
