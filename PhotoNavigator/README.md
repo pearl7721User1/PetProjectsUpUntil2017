@@ -7,7 +7,7 @@
 
 
 ### What is it made of?
-It is made of a view that allows you to swipe through the images and an indicator view 
+It is made of a view that allows you to swipe through the images and an indicator view.
 Since the view takes the whole screen and you don’t know where you are while navigating, the indicator view is needed to tell you where you are.
 
 <p align="center">
@@ -80,6 +80,6 @@ Whenever scroll event occurs, the frame view(either right side or left side acco
 
 
 
-### Building the connection between the view and the indicator view
-The view that takes the whole screen and its indicator view must go hand in hand.
+### Building the connection between the photo navigator view and its indicator view
+The photo navigator view that takes the whole screen and its indicator view must go hand in hand.
 Whatever the scroll events occur on one view, the change has to be forwarded to the other view, and vice versa.
