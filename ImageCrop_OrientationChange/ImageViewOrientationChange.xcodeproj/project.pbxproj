@@ -1,0 +1,374 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE07B3AA1E68506E005DA8A7 /* CroppedImgPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE07B3A91E68506D005DA8A7 /* CroppedImgPresentationViewController.swift */; };
+		EE33A19A1E695B23007E1C89 /* ImageCropExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE33A1991E695B23007E1C89 /* ImageCropExtension.swift */; };
+		EE50B2F21E67E97D00C2E463 /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE50B2F11E67E97D00C2E463 /* ToolbarView.swift */; };
+		EE879A921E32F01900CC3972 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE879A911E32F01900CC3972 /* AppDelegate.swift */; };
+		EE879A941E32F01900CC3972 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE879A931E32F01900CC3972 /* ViewController.swift */; };
+		EE879A971E32F01900CC3972 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE879A951E32F01900CC3972 /* Main.storyboard */; };
+		EE879A991E32F01900CC3972 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE879A981E32F01900CC3972 /* Assets.xcassets */; };
+		EE879A9C1E32F01900CC3972 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE879A9A1E32F01900CC3972 /* LaunchScreen.storyboard */; };
+		EE879AA41E32F05000CC3972 /* sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EE879AA31E32F05000CC3972 /* sample.jpg */; };
+		EEDAE8D51E3EFFCC0061F73D /* ResizeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDAE8D11E3EFFCC0061F73D /* ResizeControl.swift */; };
+		EEDAE8D71E3EFFCC0061F73D /* CropRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDAE8D31E3EFFCC0061F73D /* CropRectView.swift */; };
+		EEDAE8DC1E3F01700061F73D /* CropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDAE8DB1E3F01700061F73D /* CropView.swift */; };
+		EEFDD2C91E64A59B00B15B37 /* resizingControl.png in Resources */ = {isa = PBXBuildFile; fileRef = EEFDD2C81E64A59B00B15B37 /* resizingControl.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EE07B3A91E68506D005DA8A7 /* CroppedImgPresentationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CroppedImgPresentationViewController.swift; sourceTree = "<group>"; };
+		EE33A1991E695B23007E1C89 /* ImageCropExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCropExtension.swift; sourceTree = "<group>"; };
+		EE50B2F11E67E97D00C2E463 /* ToolbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
+		EE879A8E1E32F01900CC3972 /* ImageViewOrientationChange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageViewOrientationChange.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE879A911E32F01900CC3972 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE879A931E32F01900CC3972 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE879A961E32F01900CC3972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE879A981E32F01900CC3972 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE879A9B1E32F01900CC3972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE879A9D1E32F01900CC3972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE879AA31E32F05000CC3972 /* sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample.jpg; sourceTree = "<group>"; };
+		EEDAE8D11E3EFFCC0061F73D /* ResizeControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResizeControl.swift; sourceTree = "<group>"; };
+		EEDAE8D31E3EFFCC0061F73D /* CropRectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropRectView.swift; sourceTree = "<group>"; };
+		EEDAE8DB1E3F01700061F73D /* CropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropView.swift; sourceTree = "<group>"; };
+		EEFDD2C81E64A59B00B15B37 /* resizingControl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resizingControl.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE879A8B1E32F01900CC3972 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE07B3AB1E68507A005DA8A7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE879A931E32F01900CC3972 /* ViewController.swift */,
+				EE07B3A91E68506D005DA8A7 /* CroppedImgPresentationViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EE33A1981E695AFD007E1C89 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				EE33A1991E695B23007E1C89 /* ImageCropExtension.swift */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		EE4C53441E6F18A1004E0747 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EE879AA31E32F05000CC3972 /* sample.jpg */,
+				EEFDD2C81E64A59B00B15B37 /* resizingControl.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		EE879A851E32F01900CC3972 = {
+			isa = PBXGroup;
+			children = (
+				EE879A901E32F01900CC3972 /* ImageViewOrientationChange */,
+				EE879A8F1E32F01900CC3972 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE879A8F1E32F01900CC3972 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE879A8E1E32F01900CC3972 /* ImageViewOrientationChange.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE879A901E32F01900CC3972 /* ImageViewOrientationChange */ = {
+			isa = PBXGroup;
+			children = (
+				EE4C53441E6F18A1004E0747 /* Images */,
+				EE33A1981E695AFD007E1C89 /* Support */,
+				EE07B3AB1E68507A005DA8A7 /* ViewControllers */,
+				EEDAE8DA1E3F01550061F73D /* NestedView */,
+				EE879A911E32F01900CC3972 /* AppDelegate.swift */,
+				EE879A951E32F01900CC3972 /* Main.storyboard */,
+				EE879A981E32F01900CC3972 /* Assets.xcassets */,
+				EE879A9A1E32F01900CC3972 /* LaunchScreen.storyboard */,
+				EE879A9D1E32F01900CC3972 /* Info.plist */,
+			);
+			path = ImageViewOrientationChange;
+			sourceTree = "<group>";
+		};
+		EEDAE8DA1E3F01550061F73D /* NestedView */ = {
+			isa = PBXGroup;
+			children = (
+				EEDAE8DB1E3F01700061F73D /* CropView.swift */,
+				EEDAE8D31E3EFFCC0061F73D /* CropRectView.swift */,
+				EEDAE8D11E3EFFCC0061F73D /* ResizeControl.swift */,
+				EE50B2F11E67E97D00C2E463 /* ToolbarView.swift */,
+			);
+			name = NestedView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE879A8D1E32F01900CC3972 /* ImageViewOrientationChange */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE879AA01E32F01900CC3972 /* Build configuration list for PBXNativeTarget "ImageViewOrientationChange" */;
+			buildPhases = (
+				EE879A8A1E32F01900CC3972 /* Sources */,
+				EE879A8B1E32F01900CC3972 /* Frameworks */,
+				EE879A8C1E32F01900CC3972 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageViewOrientationChange;
+			productName = ImageViewOrientationChange;
+			productReference = EE879A8E1E32F01900CC3972 /* ImageViewOrientationChange.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE879A861E32F01900CC3972 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = SeoGiwon;
+				TargetAttributes = {
+					EE879A8D1E32F01900CC3972 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 8LSJUN2G6D;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EE879A891E32F01900CC3972 /* Build configuration list for PBXProject "ImageViewOrientationChange" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE879A851E32F01900CC3972;
+			productRefGroup = EE879A8F1E32F01900CC3972 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE879A8D1E32F01900CC3972 /* ImageViewOrientationChange */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE879A8C1E32F01900CC3972 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE879A9C1E32F01900CC3972 /* LaunchScreen.storyboard in Resources */,
+				EE879A991E32F01900CC3972 /* Assets.xcassets in Resources */,
+				EE879AA41E32F05000CC3972 /* sample.jpg in Resources */,
+				EEFDD2C91E64A59B00B15B37 /* resizingControl.png in Resources */,
+				EE879A971E32F01900CC3972 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE879A8A1E32F01900CC3972 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE07B3AA1E68506E005DA8A7 /* CroppedImgPresentationViewController.swift in Sources */,
+				EE879A941E32F01900CC3972 /* ViewController.swift in Sources */,
+				EEDAE8DC1E3F01700061F73D /* CropView.swift in Sources */,
+				EE50B2F21E67E97D00C2E463 /* ToolbarView.swift in Sources */,
+				EE879A921E32F01900CC3972 /* AppDelegate.swift in Sources */,
+				EEDAE8D71E3EFFCC0061F73D /* CropRectView.swift in Sources */,
+				EEDAE8D51E3EFFCC0061F73D /* ResizeControl.swift in Sources */,
+				EE33A19A1E695B23007E1C89 /* ImageCropExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE879A951E32F01900CC3972 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE879A961E32F01900CC3972 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE879A9A1E32F01900CC3972 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE879A9B1E32F01900CC3972 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE879A9E1E32F01900CC3972 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE879A9F1E32F01900CC3972 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE879AA11E32F01900CC3972 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8LSJUN2G6D;
+				INFOPLIST_FILE = ImageViewOrientationChange/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = softv.ImageViewOrientationChange;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EE879AA21E32F01900CC3972 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8LSJUN2G6D;
+				INFOPLIST_FILE = ImageViewOrientationChange/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = softv.ImageViewOrientationChange;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE879A891E32F01900CC3972 /* Build configuration list for PBXProject "ImageViewOrientationChange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE879A9E1E32F01900CC3972 /* Debug */,
+				EE879A9F1E32F01900CC3972 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE879AA01E32F01900CC3972 /* Build configuration list for PBXNativeTarget "ImageViewOrientationChange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE879AA11E32F01900CC3972 /* Debug */,
+				EE879AA21E32F01900CC3972 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE879A861E32F01900CC3972 /* Project object */;
+}
