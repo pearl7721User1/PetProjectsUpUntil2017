@@ -1,4 +1,4 @@
-# PhotoNavigationUX
+# Photo Navigator
 
 
 <p align="center">
@@ -6,7 +6,17 @@
 </p>
 
 
-### What is it made of?
+## Comments
+I’ve started this project to reproduce Apple’s Photos app UI/UX. 
+
+The UI/UX is distinct with the indicator on the bottom(the photo thumbnail) that tells you where you are. It’s something I wanted to accomplish by myself.
+
+### Keywords: AutoLayout, Device Orientation Change, UIPanGesture, Subclassing, Delegate-Protocol pattern, Hit Testing
+
+ 
+---
+
+## What is it made of?
 It is made of a view that allows you to swipe through the images and an indicator view.
 Since the view takes the whole screen and you don’t know where you are while navigating, the indicator view is needed to tell you where you are.
 
@@ -20,7 +30,7 @@ Since the view takes the whole screen and you don’t know where you are while n
 
 
 
-### Why scrollview? and what is the content size? 
+## Why scrollview? and what is the content size? 
 UIScrollview is the same ordinary view except it embeds contents inside. It allows you to swipe through the contents.
 UIScrollview inherently has the content size property. The content size makes the boundary that tells you how far you can scroll.
 Naturally, you need to set its content size as the same as all the boundaries of the embedded views put together.
