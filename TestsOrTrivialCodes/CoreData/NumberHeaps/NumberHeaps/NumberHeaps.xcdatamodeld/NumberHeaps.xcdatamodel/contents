@@ -9,8 +9,13 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="hey" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Hey" inverseName="okays" inverseEntity="Hey" syncable="YES"/>
     </entity>
+    <entity name="TestEntity" representedClassName=".TestEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="relationship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Okay" syncable="YES"/>
+    </entity>
     <elements>
         <element name="Hey" positionX="-6066" positionY="-1161" width="128" height="90"/>
         <element name="Okay" positionX="-5798" positionY="-1087" width="128" height="75"/>
+        <element name="TestEntity" positionX="-5931" positionY="-1098" width="128" height="75"/>
     </elements>
 </model>

@@ -203,6 +203,17 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func testEntityBtnTapped(_ sender: UIButton) {
+        
+        let newTestEntity = TestEntity(context: managedContext)
+        if let rel = newTestEntity.relationship {
+            print("exist")
+        }
+        else {
+            print("non")
+        }
+    }
+    
     func updateLabel() {
         
         countLabel.text = "\(heys.count) number:\(heys[0].number)"

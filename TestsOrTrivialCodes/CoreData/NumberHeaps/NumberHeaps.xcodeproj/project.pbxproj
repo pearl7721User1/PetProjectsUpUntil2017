@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE19A5C11F976DD8001A0F20 /* TestEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE19A5BF1F976DD8001A0F20 /* TestEntity+CoreDataClass.swift */; };
+		EE19A5C21F976DD8001A0F20 /* TestEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE19A5C01F976DD8001A0F20 /* TestEntity+CoreDataProperties.swift */; };
 		EE4A8F491F75B87100E6328F /* Okay+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A8F451F75B87100E6328F /* Okay+CoreDataClass.swift */; };
 		EE4A8F4A1F75B87100E6328F /* Okay+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A8F461F75B87100E6328F /* Okay+CoreDataProperties.swift */; };
 		EE4A8F4B1F75B87100E6328F /* Hey+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4A8F471F75B87100E6328F /* Hey+CoreDataClass.swift */; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE19A5BF1F976DD8001A0F20 /* TestEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EE19A5C01F976DD8001A0F20 /* TestEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		EE4A8F451F75B87100E6328F /* Okay+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Okay+CoreDataClass.swift"; sourceTree = "<group>"; };
 		EE4A8F461F75B87100E6328F /* Okay+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Okay+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		EE4A8F471F75B87100E6328F /* Hey+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hey+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 		EE635F7F1F0E57830073661F = {
 			isa = PBXGroup;
 			children = (
+				EE19A5BF1F976DD8001A0F20 /* TestEntity+CoreDataClass.swift */,
+				EE19A5C01F976DD8001A0F20 /* TestEntity+CoreDataProperties.swift */,
 				EE4A8F451F75B87100E6328F /* Okay+CoreDataClass.swift */,
 				EE4A8F461F75B87100E6328F /* Okay+CoreDataProperties.swift */,
 				EE4A8F471F75B87100E6328F /* Hey+CoreDataClass.swift */,
@@ -218,10 +224,12 @@
 			files = (
 				EE635F8E1F0E57830073661F /* ViewController.swift in Sources */,
 				EE635F8C1F0E57830073661F /* AppDelegate.swift in Sources */,
+				EE19A5C11F976DD8001A0F20 /* TestEntity+CoreDataClass.swift in Sources */,
 				EE635F941F0E57830073661F /* NumberHeaps.xcdatamodeld in Sources */,
 				EE4A8F491F75B87100E6328F /* Okay+CoreDataClass.swift in Sources */,
 				EE4A8F4C1F75B87100E6328F /* Hey+CoreDataProperties.swift in Sources */,
 				EE4A8F4B1F75B87100E6328F /* Hey+CoreDataClass.swift in Sources */,
+				EE19A5C21F976DD8001A0F20 /* TestEntity+CoreDataProperties.swift in Sources */,
 				EE4A8F4A1F75B87100E6328F /* Okay+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
