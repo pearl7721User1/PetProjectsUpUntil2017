@@ -1,0 +1,6 @@
+[submodule "abcde"]
+	path = abcde
+	url = https://github.com/pearl7721User1/PetProjects.git
+[submodule "IncompleteProjects/InstaLayoutAppReplication"]
+	path = IncompleteProjects/InstaLayoutAppReplication
+	url = /Users/seogiwon/Desktop/InstaLayoutAppReplication/.git
