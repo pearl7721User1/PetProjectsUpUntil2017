@@ -4,3 +4,9 @@
 [submodule "IncompleteProjects/InstaLayoutAppReplication"]
 	path = IncompleteProjects/InstaLayoutAppReplication
 	url = /Users/seogiwon/Desktop/InstaLayoutAppReplication/.git
+[submodule "InstagramLayoutAppReplication"]
+	path = InstagramLayoutAppReplication
+	url = https://github.com/pearl7721User1/PetProjects.git
+[submodule "InstaLayoutAppReplication"]
+	path = InstaLayoutAppReplication
+	url = /Users/seogiwon/Desktop/InstaLayoutAppReplication/.git
