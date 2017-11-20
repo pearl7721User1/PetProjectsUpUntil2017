@@ -1,7 +1,7 @@
 # SamplePodcast
 
 I’ve started this project in an attempt to reproduce Apple’s podcast app.
-By re-engineering the app with real-world complexities, I think I can learn to practice Core Data further; learn AV Framework; learn RSS parsing; have profound opportunities to streamline the app structure, better UI/UX, and so on.
+By reverse-engineering the app with real-world complexities, I think I can learn to practice Core Data further; learn AV Framework; learn RSS parsing; have profound opportunities to streamline the app structure, better UI/UX, and so on.
 
 ### Keywords: Core Data, Predicate, UITableView, RSS Parsing, AV Framework, Network
 
