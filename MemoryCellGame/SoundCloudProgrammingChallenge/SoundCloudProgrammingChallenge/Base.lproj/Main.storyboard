@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="SoundCloudProgrammingChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u5X-jZ-wSD">
+                                <rect key="frame" x="16" y="74" width="343" height="379"/>
+                                <connections>
+                                    <segue destination="4RK-kQ-7wD" kind="embed" identifier="" id="7XT-sv-O24"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sug-78-0BQ">
+                                <rect key="frame" x="309" y="19.5" width="56" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JKl-Of-VDx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbM-Bf-JYd">
+                                <rect key="frame" x="16" y="27" width="58" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evd-Qw-D3m">
+                                <rect key="frame" x="74" y="27" width="66" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3yW-rI-Aqe">
+                                <rect key="frame" x="0.0" y="461" width="375" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="9vp-7f-bQ3"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="bgK-XE-EzC" kind="embed" id="15R-uj-7BM"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="evd-Qw-D3m" firstAttribute="centerY" secondItem="YbM-Bf-JYd" secondAttribute="centerY" id="0cN-tr-yEq"/>
+                            <constraint firstItem="u5X-jZ-wSD" firstAttribute="top" secondItem="evd-Qw-D3m" secondAttribute="bottom" constant="23" id="0j4-hb-Nzq"/>
+                            <constraint firstItem="u5X-jZ-wSD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="39a-Vf-kiz"/>
+                            <constraint firstAttribute="bottom" secondItem="u5X-jZ-wSD" secondAttribute="bottom" constant="214" id="CCF-eu-k9O"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="YbM-Bf-JYd" secondAttribute="leading" id="FYT-rA-e6Y"/>
+                            <constraint firstItem="3yW-rI-Aqe" firstAttribute="top" secondItem="u5X-jZ-wSD" secondAttribute="bottom" constant="8" id="IEO-FI-eEX"/>
+                            <constraint firstAttribute="trailing" secondItem="3yW-rI-Aqe" secondAttribute="trailing" id="bKa-FM-SNz"/>
+                            <constraint firstItem="YbM-Bf-JYd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="7" id="edW-ql-93p"/>
+                            <constraint firstItem="u5X-jZ-wSD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="goz-rB-sW6"/>
+                            <constraint firstItem="3yW-rI-Aqe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hw9-TN-mjx"/>
+                            <constraint firstAttribute="trailing" secondItem="Sug-78-0BQ" secondAttribute="trailing" constant="10" id="jyn-Dv-M1K"/>
+                            <constraint firstItem="evd-Qw-D3m" firstAttribute="leading" secondItem="YbM-Bf-JYd" secondAttribute="trailing" id="mqN-ls-LBf"/>
+                            <constraint firstItem="Sug-78-0BQ" firstAttribute="centerY" secondItem="evd-Qw-D3m" secondAttribute="centerY" id="vFc-Iw-kxx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="programStateLabel" destination="evd-Qw-D3m" id="1iM-OH-sst"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+        <!--Memory Cell View Controller-->
+        <scene sceneID="eVF-gD-jxa">
+            <objects>
+                <viewController id="4RK-kQ-7wD" customClass="MemoryCellViewController" customModule="SoundCloudProgrammingChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I1a-9Q-IeQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="va8-yP-Onn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xhj-qP-RKR" customClass="Memo">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="379"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1PE-eh-Axn" customClass="MemoryCellView" customModule="SoundCloudProgrammingChallenge" customModuleProvider="target">
+                                <rect key="frame" x="4" y="14" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="48F-yV-d2P" customClass="MemoryCellView" customModule="SoundCloudProgrammingChallenge" customModuleProvider="target">
+                                <rect key="frame" x="89" y="14" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Dk-bz-uqj" customClass="MemoryCellView" customModule="SoundCloudProgrammingChallenge" customModuleProvider="target">
+                                <rect key="frame" x="174" y="14" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eOy-mA-hUP" customClass="MemoryCellView" customModule="SoundCloudProgrammingChallenge" customModuleProvider="target">
+                                <rect key="frame" x="259" y="14" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A9m-XD-GXW" customClass="MemoryCellView" customModule="SoundCloudProgrammingChallenge" customModuleProvider="target">
+                                <rect key="frame" x="4" y="100" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ci-zW-qsJ" customClass="MemoryCellView" customModule="SoundCloudProgrammingChallenge" customModuleProvider="target">
+                                <rect key="frame" x="89" y="100" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JNt-zW-uAX" customClass="MemoryCellView" customModule="SoundCloudProgrammingChallenge" customModuleProvider="target">
+                                <rect key="frame" x="174" y="100" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6iS-Mw-2mz" customClass="MemoryCellView" customModule="SoundCloudProgrammingChallenge" customModuleProvider="target">
+                                <rect key="frame" x="259" y="100" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AYG-eo-RdK" customClass="MemoryCellView" customModule="SoundCloudProgrammingChallenge" customModuleProvider="target">
+                                <rect key="frame" x="4" y="186" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="feg-Fk-Npr" customClass="MemoryCellView" customModule="SoundCloudProgrammingChallenge" customModuleProvider="target">
+                                <rect key="frame" x="89" y="186" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="25O-tu-51z" customClass="MemoryCellView" customModule="SoundCloudProgrammingChallenge" customModuleProvider="target">
+                                <rect key="frame" x="174" y="186" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="08v-FY-nPj" customClass="MemoryCellView" customModule="SoundCloudProgrammingChallenge" customModuleProvider="target">
+                                <rect key="frame" x="259" y="186" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ih1-My-5rU" customClass="MemoryCellView" customModule="SoundCloudProgrammingChallenge" customModuleProvider="target">
+                                <rect key="frame" x="4" y="272" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e9J-yH-Mwi" customClass="MemoryCellView" customModule="SoundCloudProgrammingChallenge" customModuleProvider="target">
+                                <rect key="frame" x="89" y="272" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tw0-V8-L6r" customClass="MemoryCellView" customModule="SoundCloudProgrammingChallenge" customModuleProvider="target">
+                                <rect key="frame" x="174" y="272" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y4M-Kc-1V2" customClass="MemoryCellView" customModule="SoundCloudProgrammingChallenge" customModuleProvider="target">
+                                <rect key="frame" x="259" y="272" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="memoryCells" destination="1PE-eh-Axn" collectionClass="NSMutableArray" id="yCP-Ku-rV2"/>
+                        <outletCollection property="memoryCells" destination="48F-yV-d2P" collectionClass="NSMutableArray" id="inU-fh-sTr"/>
+                        <outletCollection property="memoryCells" destination="6Dk-bz-uqj" collectionClass="NSMutableArray" id="Vld-RV-HYb"/>
+                        <outletCollection property="memoryCells" destination="eOy-mA-hUP" collectionClass="NSMutableArray" id="af0-3W-5cq"/>
+                        <outletCollection property="memoryCells" destination="A9m-XD-GXW" collectionClass="NSMutableArray" id="F5n-Gr-IcW"/>
+                        <outletCollection property="memoryCells" destination="1ci-zW-qsJ" collectionClass="NSMutableArray" id="3OF-1a-jDf"/>
+                        <outletCollection property="memoryCells" destination="JNt-zW-uAX" collectionClass="NSMutableArray" id="NPy-nX-es5"/>
+                        <outletCollection property="memoryCells" destination="6iS-Mw-2mz" collectionClass="NSMutableArray" id="xsV-Mi-BOT"/>
+                        <outletCollection property="memoryCells" destination="08v-FY-nPj" collectionClass="NSMutableArray" id="qLA-vu-EAf"/>
+                        <outletCollection property="memoryCells" destination="25O-tu-51z" collectionClass="NSMutableArray" id="qOL-ip-ley"/>
+                        <outletCollection property="memoryCells" destination="feg-Fk-Npr" collectionClass="NSMutableArray" id="KfA-lY-u8M"/>
+                        <outletCollection property="memoryCells" destination="AYG-eo-RdK" collectionClass="NSMutableArray" id="pn4-QO-QCS"/>
+                        <outletCollection property="memoryCells" destination="Ih1-My-5rU" collectionClass="NSMutableArray" id="6Db-C5-gAh"/>
+                        <outletCollection property="memoryCells" destination="e9J-yH-Mwi" collectionClass="NSMutableArray" id="iOo-y7-JzP"/>
+                        <outletCollection property="memoryCells" destination="tw0-V8-L6r" collectionClass="NSMutableArray" id="K8V-GP-m9d"/>
+                        <outletCollection property="memoryCells" destination="Y4M-Kc-1V2" collectionClass="NSMutableArray" id="6Hd-Ec-fsO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Jt-lC-ChB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820" y="-111"/>
+        </scene>
+        <!--Dashboard View Controller-->
+        <scene sceneID="O0J-Rf-dCj">
+            <objects>
+                <viewController storyboardIdentifier="DashBoard" id="bgK-XE-EzC" customClass="DashboardViewController" customModule="SoundCloudProgrammingChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="juc-ab-Ij0"/>
+                        <viewControllerLayoutGuide type="bottom" id="oP2-px-aia"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d8L-qe-4L5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="136"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hit:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="if2-J6-Xk9">
+                                <rect key="frame" x="24" y="43" width="42" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="Wvm-fa-z81"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enO-hm-Oar">
+                                <rect key="frame" x="65" y="43" width="20" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="ZYX-nh-F2f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trial:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCB-d2-2we">
+                                <rect key="frame" x="24" y="8" width="47" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxM-Yj-HKl">
+                                <rect key="frame" x="79" y="11" width="78" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78" id="qkA-VY-dTP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kxM-Yj-HKl" firstAttribute="leading" secondItem="uCB-d2-2we" secondAttribute="trailing" constant="8" symbolic="YES" id="6Pc-jL-n4c"/>
+                            <constraint firstItem="enO-hm-Oar" firstAttribute="leading" secondItem="d8L-qe-4L5" secondAttribute="leadingMargin" constant="49" id="7kt-fJ-hUm"/>
+                            <constraint firstItem="uCB-d2-2we" firstAttribute="leading" secondItem="if2-J6-Xk9" secondAttribute="leading" id="8ZP-ib-zsG"/>
+                            <constraint firstItem="if2-J6-Xk9" firstAttribute="top" secondItem="uCB-d2-2we" secondAttribute="bottom" constant="8" symbolic="YES" id="CeM-aJ-rsB"/>
+                            <constraint firstItem="if2-J6-Xk9" firstAttribute="baseline" secondItem="enO-hm-Oar" secondAttribute="firstBaseline" id="IID-aP-KbC"/>
+                            <constraint firstItem="uCB-d2-2we" firstAttribute="top" secondItem="juc-ab-Ij0" secondAttribute="bottom" constant="8" symbolic="YES" id="LUh-yA-eKo"/>
+                            <constraint firstItem="uCB-d2-2we" firstAttribute="centerY" secondItem="kxM-Yj-HKl" secondAttribute="centerY" id="Nxl-yT-OvM"/>
+                            <constraint firstItem="enO-hm-Oar" firstAttribute="top" secondItem="kxM-Yj-HKl" secondAttribute="bottom" constant="11" id="cJZ-lX-G3k"/>
+                            <constraint firstItem="uCB-d2-2we" firstAttribute="leading" secondItem="d8L-qe-4L5" secondAttribute="leadingMargin" constant="8" id="j0o-n1-MWW"/>
+                            <constraint firstItem="oP2-px-aia" firstAttribute="top" secondItem="if2-J6-Xk9" secondAttribute="bottom" constant="66" id="u4Z-58-sUv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hitLabel" destination="enO-hm-Oar" id="to3-yz-IUA"/>
+                        <outlet property="trialLabel" destination="kxM-Yj-HKl" id="U4Y-Sz-JZj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="slx-Pt-R3k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="535.23238380809596"/>
+        </scene>
+    </scenes>
+</document>
