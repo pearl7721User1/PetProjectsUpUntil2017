@@ -8,6 +8,13 @@
 
 import UIKit
 
+/**
+    PhotoNavigationView is made of a MainNavigationView and a ThumbnailNavigationView. Both of
+    them are created and the view hierarchy is set in willMove() function. They both need to know
+    which index of the images is showing at the given moment and its updates. Instead of introducing
+    models, I just choose to let each of them delegates to each other so that they can notify index
+    updates by themselves.
+*/
 class PhotoNavigationView: UIView {
 
     enum BackgroundColor {
@@ -21,25 +28,24 @@ class PhotoNavigationView: UIView {
     lazy var thumbnailNavigationView: ThumbnailNavigationView = {
         
         let view = ThumbnailNavigationView(with: self.images)
-        view.indexThatComesFirst = self.indexThatComesFirst
+        view.indexOfImages = self.indexOfImages
         
         return view
     }()
     
     var images: [UIImage]!
-    
-    var indexThatComesFirst = 0
+    var indexOfImages = 0
     
     lazy var mainNavigationView: MainNavigationView = {
         
         let view = MainNavigationView(with: self.images)
         view.backgroundColor = UIColor.white
-        view.indexThatComesFirst = self.indexThatComesFirst
+        view.indexOfImages = self.indexOfImages
         
         return view
     }()
     
-    let toolbarView = UIToolbar()
+    let toolbarView = MyToolbar()
 
     convenience init(withImages images:[UIImage]) {
         
@@ -60,7 +66,6 @@ class PhotoNavigationView: UIView {
         super.willMove(toSuperview: newSuperview)
         
         self.addSubview(mainNavigationView)
-        
         toolbarView.addSubview(thumbnailNavigationView)
         self.addSubview(toolbarView)
         

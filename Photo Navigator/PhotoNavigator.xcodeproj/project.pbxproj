@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE0791231FE5577D00120F9C /* MyToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0791221FE5577D00120F9C /* MyToolbar.swift */; };
 		EE751F961F2D13DA00352F25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE751F951F2D13DA00352F25 /* AppDelegate.swift */; };
 		EE751F981F2D13DA00352F25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE751F971F2D13DA00352F25 /* ViewController.swift */; };
 		EE751F9D1F2D13DA00352F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE751F9C1F2D13DA00352F25 /* Assets.xcassets */; };
@@ -38,7 +39,7 @@
 		EE751FD91F2D143600352F25 /* MainNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE751FD71F2D143600352F25 /* MainNavigationItem.swift */; };
 		EE751FDC1F2D143C00352F25 /* ThumbnailNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE751FDA1F2D143C00352F25 /* ThumbnailNavigationView.swift */; };
 		EE751FDD1F2D143C00352F25 /* ThumbnailNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE751FDB1F2D143C00352F25 /* ThumbnailNavigationItem.swift */; };
-		EE751FE31F2D145A00352F25 /* PhotoNavigatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE751FDF1F2D145A00352F25 /* PhotoNavigatior.swift */; };
+		EE751FE31F2D145A00352F25 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE751FDF1F2D145A00352F25 /* MyNavigationController.swift */; };
 		EE751FE41F2D145A00352F25 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE751FE01F2D145A00352F25 /* PhotoCollectionViewController.swift */; };
 		EE751FE51F2D145A00352F25 /* PhotoNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE751FE11F2D145A00352F25 /* PhotoNavigationViewController.swift */; };
 		EE751FE61F2D145A00352F25 /* PhotoNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE751FE21F2D145A00352F25 /* PhotoNavigationView.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE0791221FE5577D00120F9C /* MyToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyToolbar.swift; sourceTree = "<group>"; };
 		EE751F921F2D13DA00352F25 /* PhotoNavigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoNavigator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE751F951F2D13DA00352F25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE751F971F2D13DA00352F25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,7 +81,7 @@
 		EE751FD71F2D143600352F25 /* MainNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationItem.swift; sourceTree = "<group>"; };
 		EE751FDA1F2D143C00352F25 /* ThumbnailNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailNavigationView.swift; sourceTree = "<group>"; };
 		EE751FDB1F2D143C00352F25 /* ThumbnailNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailNavigationItem.swift; sourceTree = "<group>"; };
-		EE751FDF1F2D145A00352F25 /* PhotoNavigatior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoNavigatior.swift; sourceTree = "<group>"; };
+		EE751FDF1F2D145A00352F25 /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
 		EE751FE01F2D145A00352F25 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		EE751FE11F2D145A00352F25 /* PhotoNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoNavigationViewController.swift; sourceTree = "<group>"; };
 		EE751FE21F2D145A00352F25 /* PhotoNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoNavigationView.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				EE751FD71F2D143600352F25 /* MainNavigationItem.swift */,
 				EE751FDA1F2D143C00352F25 /* ThumbnailNavigationView.swift */,
 				EE751FDB1F2D143C00352F25 /* ThumbnailNavigationItem.swift */,
+				EE0791221FE5577D00120F9C /* MyToolbar.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -144,7 +147,7 @@
 		EE751FDE1F2D145000352F25 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				EE751FDF1F2D145A00352F25 /* PhotoNavigatior.swift */,
+				EE751FDF1F2D145A00352F25 /* MyNavigationController.swift */,
 				EE751FE01F2D145A00352F25 /* PhotoCollectionViewController.swift */,
 				EE751FE11F2D145A00352F25 /* PhotoNavigationViewController.swift */,
 			);
@@ -278,8 +281,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE751F981F2D13DA00352F25 /* ViewController.swift in Sources */,
-				EE751FE31F2D145A00352F25 /* PhotoNavigatior.swift in Sources */,
+				EE751FE31F2D145A00352F25 /* MyNavigationController.swift in Sources */,
 				EE751FDD1F2D143C00352F25 /* ThumbnailNavigationItem.swift in Sources */,
+				EE0791231FE5577D00120F9C /* MyToolbar.swift in Sources */,
 				EE751FE41F2D145A00352F25 /* PhotoCollectionViewController.swift in Sources */,
 				EE751FD81F2D143600352F25 /* MainNavigationView.swift in Sources */,
 				EE751F961F2D13DA00352F25 /* AppDelegate.swift in Sources */,
@@ -444,6 +448,7 @@
 				EE751FA61F2D13DA00352F25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

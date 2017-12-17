@@ -17,9 +17,16 @@ class MainNavigationView: UIView {
 
     weak var interScrollViewDelegate: InterScrollViewProtocol?
     
-    var indexThatComesFirst = 0
+    var indexOfImages = 0
+    
+    /**
+        viewWidth must be known from the beginning so that the frame of rightSeparatorView,
+        leftSeparatorView are calculated before the installed constraints take effect.
+    */
+    let viewWidth = UIScreen.main.bounds.width
 
-    fileprivate lazy var rightBorderView: UIView = {
+    /// a view that separates the on-screen image view from the right off-screen image view
+    fileprivate lazy var rightSeparatorView: UIView = {
     
         let view = UIView()
         view.backgroundColor = self.backgroundColor
@@ -27,7 +34,8 @@ class MainNavigationView: UIView {
         return view
     }()
     
-    fileprivate lazy var leftBorderView: UIView = {
+    /// a view that separates the on-screen image view from the left off-screen image view
+    fileprivate lazy var leftSeparatorView: UIView = {
         
         let view = UIView()
         view.backgroundColor = self.backgroundColor
@@ -39,15 +47,9 @@ class MainNavigationView: UIView {
     fileprivate var oldIndex: Int = 0
     fileprivate var oldIndex2: Int = 0
     
-    fileprivate var rightBorderOrigin = CGPoint.zero
-    fileprivate var leftBorderOrigin = CGPoint.zero
+    fileprivate var rightSeparatorOrigin = CGPoint.zero
+    fileprivate var leftSeparatorOrigin = CGPoint.zero
 
-    var contentOffsetXPercentage: CGPoint {
-        let x = (scrollView.contentOffset.x / scrollView.contentSize.width) * 100.0
-        let y = (scrollView.contentOffset.y / scrollView.contentSize.height) * 100.0
-        
-        return CGPoint(x: x, y: y)
-    }
     
     fileprivate var images: [UIImage]!
     fileprivate var scrollView = UIScrollView()
@@ -61,20 +63,18 @@ class MainNavigationView: UIView {
     override func willMove(toSuperview newSuperview: UIView?) {
         super.willMove(toSuperview: newSuperview)
         setupScrollView()
-        
         setupConstraints()
         
+        scrollView.addSubview(rightSeparatorView)
+        scrollView.addSubview(leftSeparatorView)
         
-        scrollView.addSubview(rightBorderView)
-        scrollView.addSubview(leftBorderView)
+        // init seperator views' positions
+        moveSeparatorView()
         
-        moveBorderView()
-        
-        
-        let theContentOffset = CGPoint(x: UIScreen.main.bounds.width * CGFloat(indexThatComesFirst), y: 0)
-        
+        // move the content offset for the first time only to have the selected index of image views
+        // show on-screen
+        let theContentOffset = CGPoint(x: viewWidth * CGFloat(indexOfImages), y: 0)
         self.scrollView.setContentOffset(theContentOffset, animated: false)
-        
     }
     
     private func setupConstraints() {
@@ -143,7 +143,7 @@ class MainNavigationView: UIView {
     func scrollViewSubViewIndex() -> Int {
         let kMaxIndex = images?.count ?? 0
         
-        var targetIndex: Int = Int(round(scrollView.contentOffset.x / UIScreen.main.bounds.width))
+        var targetIndex: Int = Int(round(scrollView.contentOffset.x / viewWidth))
         if (targetIndex < 0) {
             targetIndex = 0
         }
@@ -154,20 +154,20 @@ class MainNavigationView: UIView {
         return targetIndex
     }
     
-    func moveBorderView() -> (CGPoint, CGPoint) {
+    func moveSeparatorView() {
         let index = scrollViewSubViewIndex()
-        let rightBorderViewOrigin = CGPoint(x:scrollView.subviews[index].frame.maxX, y:scrollView.subviews[index].frame.minY)
-        let leftBorderViewOrigin = CGPoint(x:scrollView.subviews[index].frame.minX-40, y:scrollView.subviews[index].frame.minY)
+        rightSeparatorOrigin = CGPoint(x:scrollView.subviews[index].frame.maxX, y:scrollView.subviews[index].frame.minY)
+        leftSeparatorOrigin = CGPoint(x:scrollView.subviews[index].frame.minX-40, y:scrollView.subviews[index].frame.minY)
         
-        rightBorderView.frame.origin = rightBorderViewOrigin
-        leftBorderView.frame.origin = leftBorderViewOrigin
+        rightSeparatorView.frame.origin = rightSeparatorOrigin
+        leftSeparatorView.frame.origin = leftSeparatorOrigin
         
-        return (leftBorderViewOrigin, rightBorderViewOrigin)
+       
     }
     
     func updateView() {
-        rightBorderView.backgroundColor = self.backgroundColor
-        leftBorderView.backgroundColor = self.backgroundColor
+        rightSeparatorView.backgroundColor = self.backgroundColor
+        leftSeparatorView.backgroundColor = self.backgroundColor
     }
 }
 
@@ -177,32 +177,31 @@ extension MainNavigationView: UIScrollViewDelegate {
         oldIndex = scrollViewSubViewIndex()
         oldIndex2 = scrollViewSubViewIndex()
         
-        let result = moveBorderView()
-        leftBorderOrigin = result.0
-        rightBorderOrigin = result.1
+        moveSeparatorView()
+        
+        print("sepeartor: \(rightSeparatorOrigin.x) \(leftSeparatorOrigin.x)")
     }
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         // -100% ~ 100%
-        
-        let oldContentOffset = CGPoint(x: CGFloat(oldIndex) * scrollView.frame.width, y:0)
+        let oldContentOffset = CGPoint(x: CGFloat(oldIndex) * viewWidth, y:0)
         let newContentOffset = scrollView.contentOffset
         
-        print("oldIndex:\(oldIndex)")
-        
-        let XTranslation = (newContentOffset.x - oldContentOffset.x) / scrollView.frame.width
+        let XTranslation = (newContentOffset.x - oldContentOffset.x) / viewWidth
+
         print(XTranslation)
         
+        print("sepeartor: \(rightSeparatorOrigin.x) \(leftSeparatorOrigin.x)")
+        
         if (XTranslation > 0) {
-            rightBorderView.frame.origin.x = rightBorderOrigin.x - XTranslation * 40
+            rightSeparatorView.frame.origin.x = rightSeparatorOrigin.x - XTranslation * 40
         } else {
-            leftBorderView.frame.origin.x = leftBorderOrigin.x - XTranslation * 40
+            leftSeparatorView.frame.origin.x = leftSeparatorOrigin.x - XTranslation * 40
         }
         
         let newIndex = scrollViewSubViewIndex()
         
-
         if (oldIndex2 != newIndex) {
             oldIndex2 = newIndex
             interScrollViewDelegate?.hasMovedToNewIndex(index: newIndex)
@@ -216,6 +215,6 @@ extension MainNavigationView: InterScrollViewProtocol {
         
         let newContentOffset = CGPoint(x: CGFloat(index) * scrollView.bounds.size.width, y: 0)
         scrollView.setContentOffset(newContentOffset, animated: false)
-        moveBorderView()
+        moveSeparatorView()
     }
 }

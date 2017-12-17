@@ -12,7 +12,7 @@ class ThumbnailNavigationView: UIView {
 
     weak var interScrollViewDelegate: InterScrollViewProtocol?
     
-    var indexThatComesFirst = 0
+    var indexOfImages = 0
     
     fileprivate var leftConstraint: NSLayoutConstraint?
     fileprivate var itemsTotal: Int {
@@ -51,12 +51,6 @@ class ThumbnailNavigationView: UIView {
         }
     }
     
-    fileprivate var contentOffsetXPercentage: CGPoint {
-        let x = (scrollView.contentOffset.x / scrollView.contentSize.width) * 100.0
-        let y = (scrollView.contentOffset.y / scrollView.contentSize.height) * 100.0
-        
-        return CGPoint(x: x, y: y)
-    }
 
 
     convenience init(with images: [UIImage]) {
@@ -82,10 +76,10 @@ class ThumbnailNavigationView: UIView {
         
         focusedIndex = 0
         
-        let newContentOffset = CGPoint(x: self.scrollView.bounds.size.width * CGFloat(indexThatComesFirst), y: 0)
+        let newContentOffset = CGPoint(x: self.scrollView.bounds.size.width * CGFloat(indexOfImages), y: 0)
         self.scrollView.setContentOffset(newContentOffset, animated: false)
         
-        focusedIndex = indexThatComesFirst
+        focusedIndex = indexOfImages
     }
     
     private func setupScrollView() {

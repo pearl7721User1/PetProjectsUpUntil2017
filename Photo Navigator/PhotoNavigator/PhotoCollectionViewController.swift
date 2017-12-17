@@ -12,9 +12,10 @@ private let reuseIdentifier = "Cell"
 
 class PhotoCollectionViewController: UICollectionViewController {
 
+    /// This computed property brings image resources defined in MyNavigationController
     var images: [UIImage] {
         
-        if let navigationController = navigationController as? PhotoNavigatior {
+        if let navigationController = navigationController as? MyNavigationController {
             return navigationController.images
         } else {
             return [UIImage]()
@@ -42,18 +43,9 @@ class PhotoCollectionViewController: UICollectionViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     // MARK: UICollectionViewDataSource
-
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -80,7 +72,7 @@ class PhotoCollectionViewController: UICollectionViewController {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         if let vc = storyboard.instantiateViewController(withIdentifier: "PhotoNavigationViewController") as? PhotoNavigationViewController {
             
-            vc.indexThatComesFirst = indexPath.row
+            vc.indexOfImages = indexPath.row
             self.navigationController?.pushViewController(vc, animated: true)
         }
         

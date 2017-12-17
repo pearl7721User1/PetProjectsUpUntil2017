@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PhotoNavigatior: UINavigationController {
+class MyNavigationController: UINavigationController {
 
     let images: [UIImage] = {
         
@@ -25,26 +25,5 @@ class PhotoNavigatior: UINavigationController {
             , UIImage(named: "IMG_2208.jpg")!]
     }()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
