@@ -7,18 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE07914F20024A2000120F9C /* MomentsClusterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE07914E20024A2000120F9C /* MomentsClusterViewController.swift */; };
 		EE192AF41E138C1200194AA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE192AF31E138C1200194AA5 /* AppDelegate.swift */; };
 		EE192AF91E138C1200194AA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE192AF71E138C1200194AA5 /* Main.storyboard */; };
 		EE192AFB1E138C1200194AA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE192AFA1E138C1200194AA5 /* Assets.xcassets */; };
 		EE192AFE1E138C1200194AA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE192AFC1E138C1200194AA5 /* LaunchScreen.storyboard */; };
 		EE192B0A1E1394FF00194AA5 /* MomentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE192B091E1394FF00194AA5 /* MomentsViewController.swift */; };
-		EE192B0C1E13952D00194AA5 /* ForegroundEnterObserving.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE192B0B1E13952D00194AA5 /* ForegroundEnterObserving.swift */; };
 		EE192B0E1E13A2BA00194AA5 /* ViewForPermissionUnavailable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE192B0D1E13A2BA00194AA5 /* ViewForPermissionUnavailable.swift */; };
 		EE192B101E13BB9D00194AA5 /* PhotosFetchingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE192B0F1E13BB9D00194AA5 /* PhotosFetchingExtension.swift */; };
 		EE192B321E16389100194AA5 /* GridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE192B311E16389100194AA5 /* GridViewCell.swift */; };
 		EE33A19E1E6A0A1E007E1C89 /* heartNormal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EE33A19D1E6A0A1E007E1C89 /* heartNormal@2x.png */; };
 		EE33A1A01E6A81B5007E1C89 /* heartSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EE33A19F1E6A81B5007E1C89 /* heartSelected@2x.png */; };
 		EE33A1A21E6A89A8007E1C89 /* heartWhite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EE33A1A11E6A89A8007E1C89 /* heartWhite@2x.png */; };
+		EE6CB6C420137F7400D7F1EF /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6CB6C320137F7400D7F1EF /* MyViewController.swift */; };
+		EECA149620063DF600AA7A34 /* MomentsClusterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECA149520063DF600AA7A34 /* MomentsClusterCollectionViewCell.swift */; };
+		EECA14992008E29A00AA7A34 /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECA14982008E29A00AA7A34 /* PhotosViewModel.swift */; };
 		EECBB0B61E4813FB00C8A39D /* MomentsViewControllerAnimatorProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECBB0B51E4813FB00C8A39D /* MomentsViewControllerAnimatorProperty.swift */; };
 		EECBB0B81E48163800C8A39D /* ShrinkOffAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECBB0B71E48163800C8A39D /* ShrinkOffAnimator.swift */; };
 		EEDAE8DE1E3F6D5E0061F73D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDAE8DD1E3F6D5E0061F73D /* DetailViewController.swift */; };
@@ -26,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE07914E20024A2000120F9C /* MomentsClusterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentsClusterViewController.swift; sourceTree = "<group>"; };
 		EE192AF01E138C1200194AA5 /* PhotokitMomentsTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotokitMomentsTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE192AF31E138C1200194AA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE192AF81E138C1200194AA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,13 +37,15 @@
 		EE192AFD1E138C1200194AA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE192AFF1E138C1200194AA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE192B091E1394FF00194AA5 /* MomentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentsViewController.swift; sourceTree = "<group>"; };
-		EE192B0B1E13952D00194AA5 /* ForegroundEnterObserving.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForegroundEnterObserving.swift; sourceTree = "<group>"; };
 		EE192B0D1E13A2BA00194AA5 /* ViewForPermissionUnavailable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewForPermissionUnavailable.swift; sourceTree = "<group>"; };
 		EE192B0F1E13BB9D00194AA5 /* PhotosFetchingExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosFetchingExtension.swift; sourceTree = "<group>"; };
 		EE192B311E16389100194AA5 /* GridViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewCell.swift; sourceTree = "<group>"; };
 		EE33A19D1E6A0A1E007E1C89 /* heartNormal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heartNormal@2x.png"; sourceTree = "<group>"; };
 		EE33A19F1E6A81B5007E1C89 /* heartSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heartSelected@2x.png"; sourceTree = "<group>"; };
 		EE33A1A11E6A89A8007E1C89 /* heartWhite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heartWhite@2x.png"; sourceTree = "<group>"; };
+		EE6CB6C320137F7400D7F1EF /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		EECA149520063DF600AA7A34 /* MomentsClusterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentsClusterCollectionViewCell.swift; sourceTree = "<group>"; };
+		EECA14982008E29A00AA7A34 /* PhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewModel.swift; sourceTree = "<group>"; };
 		EECBB0B51E4813FB00C8A39D /* MomentsViewControllerAnimatorProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentsViewControllerAnimatorProperty.swift; sourceTree = "<group>"; };
 		EECBB0B71E48163800C8A39D /* ShrinkOffAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShrinkOffAnimator.swift; sourceTree = "<group>"; };
 		EEDAE8DD1E3F6D5E0061F73D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +82,7 @@
 		EE192AF21E138C1200194AA5 /* PhotokitMomentsTesting */ = {
 			isa = PBXGroup;
 			children = (
+				EECA14972008E27A00AA7A34 /* Model */,
 				EE192B361E18F6D400194AA5 /* ViewController */,
 				EEDAE8DF1E406C4F0061F73D /* Animator */,
 				EE4C53421E6BE331004E0747 /* PhotosPermission */,
@@ -99,10 +106,13 @@
 		EE192B361E18F6D400194AA5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				EE07914E20024A2000120F9C /* MomentsClusterViewController.swift */,
+				EECA149520063DF600AA7A34 /* MomentsClusterCollectionViewCell.swift */,
 				EE192B091E1394FF00194AA5 /* MomentsViewController.swift */,
 				EECBB0B51E4813FB00C8A39D /* MomentsViewControllerAnimatorProperty.swift */,
 				EEDAE8DD1E3F6D5E0061F73D /* DetailViewController.swift */,
 				EE192B311E16389100194AA5 /* GridViewCell.swift */,
+				EE6CB6C320137F7400D7F1EF /* MyViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -111,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				EE192B0D1E13A2BA00194AA5 /* ViewForPermissionUnavailable.swift */,
-				EE192B0B1E13952D00194AA5 /* ForegroundEnterObserving.swift */,
 			);
 			name = PhotosPermission;
 			sourceTree = "<group>";
@@ -134,6 +143,14 @@
 				EE33A1A11E6A89A8007E1C89 /* heartWhite@2x.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		EECA14972008E27A00AA7A34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EECA14982008E29A00AA7A34 /* PhotosViewModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		EEDAE8DF1E406C4F0061F73D /* Animator */ = {
@@ -222,13 +239,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE192B101E13BB9D00194AA5 /* PhotosFetchingExtension.swift in Sources */,
+				EE07914F20024A2000120F9C /* MomentsClusterViewController.swift in Sources */,
 				EECBB0B61E4813FB00C8A39D /* MomentsViewControllerAnimatorProperty.swift in Sources */,
-				EE192B0C1E13952D00194AA5 /* ForegroundEnterObserving.swift in Sources */,
 				EE192B0A1E1394FF00194AA5 /* MomentsViewController.swift in Sources */,
+				EECA14992008E29A00AA7A34 /* PhotosViewModel.swift in Sources */,
+				EECA149620063DF600AA7A34 /* MomentsClusterCollectionViewCell.swift in Sources */,
 				EE192AF41E138C1200194AA5 /* AppDelegate.swift in Sources */,
 				EE192B0E1E13A2BA00194AA5 /* ViewForPermissionUnavailable.swift in Sources */,
 				EE192B321E16389100194AA5 /* GridViewCell.swift in Sources */,
 				EEDAE8DE1E3F6D5E0061F73D /* DetailViewController.swift in Sources */,
+				EE6CB6C420137F7400D7F1EF /* MyViewController.swift in Sources */,
 				EECBB0B81E48163800C8A39D /* ShrinkOffAnimator.swift in Sources */,
 				EEDAE8E11E406C680061F73D /* SpringUpAnimator.swift in Sources */,
 			);

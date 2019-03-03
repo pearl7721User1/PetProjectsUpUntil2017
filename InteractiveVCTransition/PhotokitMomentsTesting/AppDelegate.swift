@@ -16,6 +16,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let navigator = storyboard.instantiateViewController(withIdentifier: "MainNavigationController") as! UINavigationController
+        
+        let vc = storyboard.instantiateViewController(withIdentifier: "MomentsViewController")
+        navigator.pushViewController(vc, animated: false)
+        
+        self.window?.rootViewController = navigator
+ 
+        // fetch photos models
+//        PhotosViewModel.shared.startFetching()
+ 
+        
+        
+        
         return true
     }
 
@@ -31,12 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-        
-        // signal the change of app state to the root view controller if it implements ForegroundEnterObserving protocol
-        if let viewController = window?.rootViewController as? ForegroundEnterObserving{
-            
-            viewController.foregroundEntered()
-        }
+       
         
     }
 

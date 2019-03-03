@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SAB-l4-Dcw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SAB-l4-Dcw">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -92,12 +92,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="900" y="-164"/>
+            <point key="canvasLocation" x="836" y="-164"/>
         </scene>
         <!--Moments-->
         <scene sceneID="GrJ-In-OAO">
             <objects>
-                <viewController id="Teq-Tk-PWI" customClass="MomentsViewController" customModule="PhotokitMomentsTesting" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MomentsViewController" id="Teq-Tk-PWI" customClass="MomentsViewController" customModule="PhotokitMomentsTesting" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SIH-Gl-EgV"/>
                         <viewControllerLayoutGuide type="bottom" id="2Xw-75-jDu"/>
@@ -107,7 +107,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="oVo-RG-L6C">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="-44" width="375" height="711"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="vPY-En-zzx">
                                     <size key="itemSize" width="80" height="80"/>
@@ -182,7 +182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FrE-86-9Gc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2624.8000000000002" y="-286.50674662668666"/>
+            <point key="canvasLocation" x="3410" y="-535"/>
         </scene>
         <!--Moments Cluster View Controller-->
         <scene sceneID="Cnq-Oy-hdt">
@@ -200,21 +200,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="yfN-mj-6JH">
-                                    <size key="itemSize" width="80" height="80"/>
+                                    <size key="itemSize" width="40" height="40"/>
                                     <size key="headerReferenceSize" width="50" height="50"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GridViewCell" id="qh1-pU-JGI" customClass="GridViewCell" customModule="PhotokitMomentsTesting" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="80" height="80"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GridViewCell" id="qh1-pU-JGI" userLabel="Cell" customClass="MomentsClusterCollectionViewCell" customModule="PhotokitMomentsTesting" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="40" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="geB-pj-Tdh">
-                                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="geB-pj-Tdh" customClass="Momen">
+                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
@@ -225,7 +225,7 @@
                                             <constraint firstItem="geB-pj-Tdh" firstAttribute="leading" secondItem="qh1-pU-JGI" secondAttribute="leading" id="nPD-VE-Gap"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="imageView" destination="geB-pj-Tdh" id="fCM-g2-fSY"/>
+                                            <outlet property="imageView" destination="geB-pj-Tdh" id="ank-Zh-0bW"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -246,8 +246,8 @@
                                     </constraints>
                                 </collectionReusableView>
                                 <connections>
-                                    <outlet property="dataSource" destination="zpV-FO-vYJ" id="Rg1-Xd-mi0"/>
-                                    <outlet property="delegate" destination="zpV-FO-vYJ" id="qWQ-Z3-xRG"/>
+                                    <outlet property="dataSource" destination="zpV-FO-vYJ" id="TlG-78-0jX"/>
+                                    <outlet property="delegate" destination="zpV-FO-vYJ" id="YdL-vo-hY0"/>
                                 </connections>
                             </collectionView>
                         </subviews>
@@ -259,13 +259,14 @@
                             <constraint firstAttribute="trailing" secondItem="MPh-z5-B0M" secondAttribute="trailing" id="yjm-yp-qcG"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="pM5-Tg-bsm"/>
                     <connections>
-                        <outlet property="theCollectionView" destination="MPh-z5-B0M" id="dCM-dO-k54"/>
+                        <outlet property="collectionView" destination="MPh-z5-B0M" id="vlX-rd-LhU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SaD-LV-oAI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3460" y="-928"/>
+            <point key="canvasLocation" x="2561" y="-534"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1lP-Ig-SwQ">
@@ -273,7 +274,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gKP-g0-ncO" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="e4X-sV-wgb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -288,20 +289,39 @@
         <!--Navigation Controller-->
         <scene sceneID="oKW-Li-TK6">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SAB-l4-Dcw" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MainNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="SAB-l4-Dcw" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zet-kF-8y4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Teq-Tk-PWI" kind="relationship" relationship="rootViewController" id="HRD-vP-zoo"/>
+                        <segue destination="zpV-FO-vYJ" kind="relationship" relationship="rootViewController" id="W7g-FF-fby"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kgc-gj-EBx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1688.8" y="-164.16791604197903"/>
+        </scene>
+        <!--My View Controller-->
+        <scene sceneID="zku-sv-PtV">
+            <objects>
+                <viewController id="wgQ-Vu-cPf" customClass="MyViewController" customModule="PhotokitMomentsTesting" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8dK-x1-38O"/>
+                        <viewControllerLayoutGuide type="bottom" id="xdM-t4-xGA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1fb-2U-f6y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7vd-BR-atu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3xo-qZ-niU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2566" y="166"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="1ol-hM-GU2">
@@ -352,7 +372,7 @@
                     </connections>
                 </barButtonItem>
             </objects>
-            <point key="canvasLocation" x="3338" y="-268"/>
+            <point key="canvasLocation" x="4602" y="-199"/>
         </scene>
     </scenes>
 </document>

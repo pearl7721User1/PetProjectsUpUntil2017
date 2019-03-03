@@ -26,7 +26,7 @@ protocol CommentsClientProtocol {
     func commentCommonDeinit()
 }
 
-class CommentsClient {
+class CommentsClient: Operation {
     
     // url session that may run as a mock
     var session: MightbeMockURLSession = URLSession.shared
@@ -34,6 +34,17 @@ class CommentsClient {
     // api end point to download json
     let apiEndPoint = "https://jsonplaceholder.typicode.com/comments"
 
+    override func start() {
+        
+        self.setValue(true, forKey: "isExecuting")
+        
+        self.fetchComments { (error) -> (Void) in
+            
+            self.setValue(false, forKey: "isExecuting")
+            self.setValue(true, forKey: "isFinished")
+        }
+        
+    }
     
     var commentList = [Comment]() {
         didSet {

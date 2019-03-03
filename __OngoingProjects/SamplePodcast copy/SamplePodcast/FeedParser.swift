@@ -271,7 +271,7 @@ class FeedParser: NSObject, XMLParserDelegate {
         else if self.currentPath == "/rss/channel/language" {
             self.currentFeedChannel?.channelLanguage = self.currentElementContent
         }
-            
+        
         // comments
         else if self.currentPath == "/rss/channel/item/comments" {
             self.currentFeedItem?.feedCommentsURL = self.currentElementContent

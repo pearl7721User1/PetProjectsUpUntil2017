@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE6CB6E62018AC9300D7F1EF /* BaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6CB6E52018AC9300D7F1EF /* BaseOperation.swift */; };
+		EE6CB6E82018AC9C00D7F1EF /* BaseOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6CB6E72018AC9C00D7F1EF /* BaseOperationQueue.swift */; };
+		EE6CB6EA2018ACC100D7F1EF /* OperationConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6CB6E92018ACC100D7F1EF /* OperationConditions.swift */; };
+		EE6CB6EC2018ACE200D7F1EF /* OperationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6CB6EB2018ACE200D7F1EF /* OperationObserver.swift */; };
+		EE6CB6EE2018AD0700D7F1EF /* BlockObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6CB6ED2018AD0700D7F1EF /* BlockObserver.swift */; };
+		EE6CB6F02018AD2600D7F1EF /* ExclusivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6CB6EF2018AD2600D7F1EF /* ExclusivityController.swift */; };
 		EECE77C91EA14DD600F2951C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE77C81EA14DD600F2951C /* AppDelegate.swift */; };
 		EECE77CE1EA14DD600F2951C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EECE77CC1EA14DD600F2951C /* Main.storyboard */; };
 		EECE77D01EA14DD600F2951C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EECE77CF1EA14DD600F2951C /* Assets.xcassets */; };
@@ -33,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE6CB6E52018AC9300D7F1EF /* BaseOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseOperation.swift; sourceTree = "<group>"; };
+		EE6CB6E72018AC9C00D7F1EF /* BaseOperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseOperationQueue.swift; sourceTree = "<group>"; };
+		EE6CB6E92018ACC100D7F1EF /* OperationConditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationConditions.swift; sourceTree = "<group>"; };
+		EE6CB6EB2018ACE200D7F1EF /* OperationObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationObserver.swift; sourceTree = "<group>"; };
+		EE6CB6ED2018AD0700D7F1EF /* BlockObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockObserver.swift; sourceTree = "<group>"; };
+		EE6CB6EF2018AD2600D7F1EF /* ExclusivityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExclusivityController.swift; sourceTree = "<group>"; };
 		EECE77C51EA14DD600F2951C /* CringlesCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CringlesCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECE77C81EA14DD600F2951C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EECE77CD1EA14DD600F2951C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -143,6 +155,12 @@
 			children = (
 				EECE77EC1EA1524700F2951C /* Comment.swift */,
 				EECE77E81EA14E6200F2951C /* CommentsClient.swift */,
+				EE6CB6E52018AC9300D7F1EF /* BaseOperation.swift */,
+				EE6CB6E72018AC9C00D7F1EF /* BaseOperationQueue.swift */,
+				EE6CB6EB2018ACE200D7F1EF /* OperationObserver.swift */,
+				EE6CB6E92018ACC100D7F1EF /* OperationConditions.swift */,
+				EE6CB6ED2018AD0700D7F1EF /* BlockObserver.swift */,
+				EE6CB6EF2018AD2600D7F1EF /* ExclusivityController.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -254,12 +272,18 @@
 			files = (
 				EECE77ED1EA1524700F2951C /* Comment.swift in Sources */,
 				EECE77EB1EA14EE000F2951C /* URLSessionMock.swift in Sources */,
+				EE6CB6E82018AC9C00D7F1EF /* BaseOperationQueue.swift in Sources */,
 				EECE77F41EA1584000F2951C /* EmailAlphabeticViewController.swift in Sources */,
 				EECE77E91EA14E6200F2951C /* CommentsClient.swift in Sources */,
+				EE6CB6EA2018ACC100D7F1EF /* OperationConditions.swift in Sources */,
 				EECE77C91EA14DD600F2951C /* AppDelegate.swift in Sources */,
 				EECE77F01EA156C300F2951C /* CommentsCommonViewController.swift in Sources */,
+				EE6CB6EE2018AD0700D7F1EF /* BlockObserver.swift in Sources */,
+				EE6CB6E62018AC9300D7F1EF /* BaseOperation.swift in Sources */,
 				EECE77F21EA1582B00F2951C /* IDDescendingViewController.swift in Sources */,
 				EECE77F61EA1585700F2951C /* EvenPostIDViewController.swift in Sources */,
+				EE6CB6EC2018ACE200D7F1EF /* OperationObserver.swift in Sources */,
+				EE6CB6F02018AD2600D7F1EF /* ExclusivityController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

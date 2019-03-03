@@ -18,15 +18,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         
+        
         commentsClient.fetchComments { (error) -> (Void) in
             
-            if error != nil {
-                print("error occurred as it calls api")
+            DispatchQueue.main.async {
+                self.showAlert(msg: "msg1")
+                self.showAlert(msg: "msg2")
             }
+            
+            
         }
         
         
         return true
+    }
+    
+    func showAlert(msg: String) {
+        
+        let alertController = UIAlertController(title: msg, message: "message", preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        
+        self.window?.rootViewController?.present(alertController, animated: true, completion: nil)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

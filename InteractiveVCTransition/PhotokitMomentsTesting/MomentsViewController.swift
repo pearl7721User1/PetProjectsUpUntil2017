@@ -26,7 +26,6 @@ class MomentsViewController: UIViewController {
     var assetFetchResultDictionary = Dictionary<Int, PHFetchResult<PHAsset>>()
     
     // for fetching assets
-    let imageManager = PHImageManager()
     var thumbnailSize: CGSize!
     
     // for close-up view for an asset
@@ -65,8 +64,7 @@ class MomentsViewController: UIViewController {
         navigationController?.isToolbarHidden = false
         navigationController?.delegate = self
 
-        // register library instance to add change observer
-        PHPhotoLibrary.shared().register(self)
+        
         
         // customize the collection view's flow layout so that collection view cells have separator between them
         self.theCollectionView.collectionViewLayout = self.theCollectionView.flowLayout()
@@ -74,13 +72,32 @@ class MomentsViewController: UIViewController {
         // determine the size of the thumbnails and use it to request the images from the PHImageManager
         thumbnailSize = self.theCollectionView.thumbnailSize()
         
+        
+        // your code here
+        PHPhotoLibrary.requestAuthorization { (status) in
+            
+            print("abc")
+            
+        }
+        
+        
         // make sure if access to photos is permitted
         photosPermissionInspection()
         
+        
+        
+        
+        // register library instance to add change observer
+        PHPhotoLibrary.shared().register(self)
+        
+    /*
+        NotificationCenter.default.addObserver(self, selector: #selector(photosPermissionInspection), name: Notification.Name.UIApplicationDidBecomeActive, object: nil)
+      */
     }
     
     deinit {
         PHPhotoLibrary.shared().unregisterChangeObserver(self)
+        NotificationCenter.default.removeObserver(self, name: Notification.Name.UIApplicationDidBecomeActive, object: nil)
     }
     
     override func viewWillLayoutSubviews() {
@@ -89,7 +106,7 @@ class MomentsViewController: UIViewController {
         // manually set the view's layout so that it doesn't need to set its constraints for the sake of simplicity
         theViewForUnavailablePermission.frame = self.view.frame
     }
-    
+    /*
     override func viewDidLayoutSubviews() {
         
         // to set the collection view's focus to the last item. This should occur only once when the view is loaded for the first time
@@ -105,7 +122,7 @@ class MomentsViewController: UIViewController {
         }
         
     }
-    
+    */
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -127,12 +144,6 @@ class MomentsViewController: UIViewController {
 
     
     // MARK: - Photos Permission
-    func foregroundEntered() {
-        
-        // when the app state changes from background to foreground, inspect the photos permission state. if photos is not permitted, this view controller's view is locked.
-        photosPermissionInspection()
-    }
-    
     func photosPermissionInspection() {
         
         switch (PHPhotoLibrary.authorizationStatus()) {
@@ -141,8 +152,6 @@ class MomentsViewController: UIViewController {
             if theViewForUnavailablePermission.superview != nil {
                 theViewForUnavailablePermission.removeFromSuperview()
             }
-            
-            loadPhotos()
             
         default:
             
@@ -265,7 +274,7 @@ extension MomentsViewController: UICollectionViewDataSource
             cell.representedAssetIdentifier = asset.localIdentifier
             
             // request an image for the asset from the PHCachingImageManager. The image size is set as 1.5 times thumbnail image size to optimize performance.
-            imageManager.requestImage(for: asset, targetSize: CGSize(width:thumbnailSize.width*1.5, height:thumbnailSize.height*1.5), contentMode: .aspectFill, options: nil, resultHandler: { image, _ in
+            PHImageManager().requestImage(for: asset, targetSize: CGSize(width:thumbnailSize.width*1.5, height:thumbnailSize.height*1.5), contentMode: .aspectFill, options: nil, resultHandler: { image, _ in
                 
                 // The cell may have been recycled by the time this handler gets called;
                 // set the cell's thumbnail image only if it's still showing the same asset.
