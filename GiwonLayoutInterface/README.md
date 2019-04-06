@@ -1,4 +1,4 @@
-# SampleInstaLayout
+# GiwonLayoutInterface
 
 I’ve started this project in an attempt to replicate Instagram Layout app's UI/UX on my own.
 Instagram Layout app offers intuitive UI/UX to create a distinct layout with the photos of your choice.
